@@ -1,69 +1,70 @@
-*
-{
-padding:0;
-margin:0;
-box-sizing: border-box;
+body,h1,h2,h3,h4,h5,h6,p,ul{
+	margin: 0; padding: 0;
+}
+.clear{
+	clear: both;
+}
+header{
+	background color: yellow;
 
 }
-body
-{
-background-size: cover;
-background-position: center;
-box-sizing: border-box;
-font-family: sans-serif;
-background-color: white;
-}
-.menu-bar 
-{
-background: rgb(0,100,0);
-text-align: center;
-}
-.menu-bar ul
-{
-display: inline-flex;
-list-style: none;
-color:red
-}
-.menu-bar ul li{
-	width: 120px;
-	margin: 15px;
-	padding: 15px;
-}
-.menu-bar ul li a{
-	text text-decoration: none;
-	color: #fff;
-}
-.active,.menu-bar ul li:hover{
-background-color: #2bab0d;
-border-radius: 3px;
-}
-.sub-menu{
-	display: none;
+.logo{
+	width: 50%;background-color: blue;float: left;
 }
 
-.menu-bar ul li:hover .sub-menu li{
-	display: block;
-	position: absolute;
-	background: rgb(0,100,0);
-	margin-top: 15px;
-	margin-left: -15px;
+
+.logo img{
+	width: 80px;height: 80px;border-radius:50%;
 }
-.menu-bar ul li:hover .sub-menu ul{
-	display: block;
-	margin: 10px;
+
+.contacts{
+	width:50%;background-color:yellow;float: right;
+	height: 13.2vh;
+	color:green;
+}
+/*header css ends*>
+/*navigation css starts*/
+nav{
+	background-color: red;
+}
+nav ul{
+	padding: 0.5%;
 
 }
-.menu-bar ul li:hover .sub-menu ul li{
-	width: 150px;
-	padding: 10px;
-	border bottom:1px dotted #fff;
-	background: transparent;
-	border border-radius: 0;
-	text-align: left; 
+nav ul li{
+	list-style: none;float: left;padding: 1%;background-color: yellow;
+	margin: 1%;
 }
-.menu-bar ul li:hover .sub-menu ul li:last-child{
-	border bottom: none;
+nav ul li a{
+	text-decoration:underline;lighting-color: blue;
+
 }
-.menu-bar ul li:hover .sub-menu ul li a:hover{
-	color: #b2ff00;
+nav ul li a:hover{
+	font-size: 50px;
+
 }
+
+/*navigation block css ends*/
+/*section block css ends*/
+section{
+	display: flex;
+}
+section div h2 ul li{
+text-decoration: underline;
+}
+.sidebar{
+	width: 23% ;padding:1%;background-color: blue;
+}
+.sidebar h2{
+color: red;
+}
+.sidebar ul li{
+	padding: 2%;
+}
+.sidebar ul li a{
+	color: white;text-decoration: underline;
+}
+.main{
+	width: 73%;padding: 1%;background-color: blue;
+}
+/*section block css ends*/
